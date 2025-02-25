@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa</title>
+</head>
+<body>
+    <h1>Pendaftaran Mahasiswa</h1>
+    <table border="1">
+        <tr>
+            <td>
+                <a href="pendaftaran.html">Pendaftaran Mahasiswa</a> | <a href="lokasi.html">Lokasi Kami</a> | | <a href="index.html">Home</a>
+            </td>
+        </tr>
+    </table>
+    <form action="proses.php" method="post">
+        Nama Lengkap <br>
+        <input type="text" name="Nama_Lengkap" id="Nama_Lengkap" required> <br>
+        Tanggal Lahir <br>
+        <input type="date" name="Tanggal_Lahir" id="Tanggal_Lahir"> <br>
+        Jenis Kelamin <br>
+        <input type="radio" name="jk" id="jkl" value="L" checked>
+        Laki Laki <br>
+        <input type="radio" name="jk" id="jkp" value="P">
+        Perempuan <br>
+        Tempat Lahir <br>
+        <select name="Tempat_Lahir" id="Tempat_Lahir">
+            <option value="PLB">Palembang</option>
+            <option value="JKT">Jakarta</option>
+            <option value="JT">Jawa Timur</option>
+        </select> <br>
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
